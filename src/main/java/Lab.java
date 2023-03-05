@@ -14,7 +14,28 @@ public class Lab {
      * @param password a String that represents a password.
      * @return true if there is a successful login, and false otherwise.
      */
+    boolean result;
+   
     public boolean login(String username, String password){
-        return false;
+        String user = username;
+        String pword = password;
+        
+        
+        if (user == "admin"){
+            if (pword == "qwerty"){
+                result = true;
+            } else {
+                result = false;
+            }
+        }
+        else if (user == "user"){
+            if (pword == "password"){
+                result = true;
+            } else {
+                result = false;
+            }
+        }
+        return result;
     }
+               
 }
